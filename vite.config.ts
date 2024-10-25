@@ -37,4 +37,15 @@ export default defineApplicationConfig({
       },
     },
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets', // 静态资源的输出目录，默认是 'assets'
+    emptyOutDir: true, // 构建前是否清空输出目录，默认是 true
+    rollupOptions: {
+      // 自定义底层的 Rollup 打包配置
+      output: {
+        // 自定义输出配置
+      },
+    },
+  },
 });
